@@ -488,6 +488,21 @@
 	Released 8 March 2015.
 	</li>
 	<li>
+	Scintilla on Windows is now always a wide character window so SCI_SETKEYSUNICODE has no effect 
+	and SCI_GETKEYSUNICODE always returns true. These APIs are deprecated and should not be called.
+	</li>
+	<li>
+	Verilog folder fixes bug with `end completing an `if* instead of `endif.
+	</li>
+    </ul>
+    <h3>
+       <a href="http://prdownloads.sourceforge.net/scintilla/scite354.zip?download">Release 3.5.4</a>
+    </h3>
+    <ul>
+	<li>
+	Released 8 March 2015.
+	</li>
+	<li>
 	Indicators may have a different colour and style when the mouse is over them or the caret is moved into them.
 	</li>
 	<li>
@@ -545,6 +560,9 @@
 	<li>
 	Fix adaptive scrolling speed for GTK+ on OS X with GTK Quartz backend (as opposed to X11 backend).
 	<a href="http://sourceforge.net/p/scintilla/bugs/1696/">Bug #1696</a>.
+	</li>
+	<li>
+	Fix position of autocompletion and calltips on Cocoa when there were two screens stacked vertically.
 	</li>
 	<li>
 	Fix crash in SciTE when saving large files in background when closing application.
